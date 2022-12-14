@@ -1,9 +1,15 @@
+.cards-wrapper{
+    background-color: $pr-main-db;
+
+}
+
 .cards-container {
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(1, minmax(320px, 1fr));
     grid-auto-rows: 320px;
     width: 100%;
+    padding-block-start: 40px;
     @media (min-width:800px) {
         grid-template-columns: repeat(2, minmax(320px, 1fr));
     }

@@ -1,14 +1,36 @@
 .app-hero {
     margin-block: em(50px);
     // padding-inline: em(36px);
+    background-image: url("../assets/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 220%;
     text-align: center;
+    padding-block-end: 0;
+    margin: 0;
+    @media (min-width: 1000px) {
+        background-size: 110%;
+    }
+    @media (min-width: 1600px) {
+        background-size: 100%;
+    }
     img {
         padding: 8px;
         max-width: em(720px);
         margin-inline: auto;
     }
     .hero-info {
-        background-image: url("../images/bg-curvy-mobile.svg");
+        position: relative;
+        .wave {
+            overflow: hidden;
+            // filter: invert(1) ;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%) scale(2);
+        }
         h1 {
             margin-block-start: em(33px);
             font-family: ralewayBold;
@@ -36,7 +58,7 @@
             color: $light;
         }
 
-        @media (min-width: $break-normal) {
+        @media (min-width: $break-narrow) {
             h1 {
                 font-size: em(40px);
             }

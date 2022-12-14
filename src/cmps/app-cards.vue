@@ -1,8 +1,11 @@
 <template>
-  <section class="cards-container">
-    <article class="card" v-for="card in cards">
-      <card-preview :card="card" />
-    </article>
+  <section class="cards-wrapper main-layout full">
+
+    <section class="cards-container">
+      <article class="card" v-for="card in cards">
+        <card-preview :card="card" />
+      </article>
+    </section>
   </section>
 </template>
 <script>

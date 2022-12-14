@@ -1,6 +1,5 @@
 <template>
-  <!-- <img src="../assets/images/bg-curvy-desktop.svg" alt=""> -->
-  <section class="app-hero">
+  <section class="app-hero full">
     <img src="../assets/images/illustration-intro.png" alt="">
     <div class="hero-info">
       <h1>All your files in one secure location, accessible anywhere.</h1>

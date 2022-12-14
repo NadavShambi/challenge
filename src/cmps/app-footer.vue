@@ -1,4 +1,6 @@
 <template>
+    <section class="footer-wrapper main-layout full">
+
     <footer class="app-footer">
         <img src="../assets/images/logo.svg" alt="">
 
@@ -34,6 +36,8 @@
         </section>
 
     </footer>
+</section>
+
 </template>
 <script>
 export default {

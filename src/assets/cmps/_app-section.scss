@@ -1,0 +1,53 @@
+.section-wrapper {
+    background-color: $pr-main-db;
+}
+.app-section {
+    @include flex(column);
+    @media (min-width: $break-narrow) {
+        @include flex;
+        gap: em(60px);
+    }
+    img {
+        flex-basis: 50%;
+        max-width: clamp(em(304px), em(615px), 60%);
+        margin-inline: auto;
+    }
+
+    .productive-card {
+        margin: auto;
+        max-width: clamp(em(304px), em(615px), 60%);
+
+        h4 {
+            font-family: ralewayBold;
+            margin-block: em(50px) em(15px);
+            @media (min-width: $break-narrow) {
+                margin-block: 0 em(15px);
+                font-size: em(40px);
+                width: 25pc;
+            }
+        }
+
+        p,
+        a {
+            font-size: em(14px);
+            @media (min-width: $break-narrow) {
+                font-size: em(16px);
+            }
+        }
+
+        p {
+            margin-block-end: em(17px);
+        }
+
+        a {
+            padding-block-end: 3px;
+            border-bottom: 1px solid $cta-links;
+            span {
+                margin-inline-start: 4px;
+                img {
+                    width: em(14px);
+                }
+            }
+        }
+    }
+}

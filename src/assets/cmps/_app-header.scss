@@ -7,6 +7,9 @@
     .logo {
         width: em(80px);
         transition: width .3s;
+        @media (min-width: $break-narrow) {
+            width: em(136px);
+        }
         @media (min-width: $break-normal) {
             width: em(176px);
         }
@@ -29,7 +32,7 @@
                 margin-inline-end: 0;
             }
         }
-        @media (min-width: $break-normal) {
+        @media (min-width: $break-narrow) {
             font-size: rem(16px);
         }
     }

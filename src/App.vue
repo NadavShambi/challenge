@@ -5,9 +5,9 @@
     <app-hero />
     <app-cards />
     <app-section />
-    <!-- <app-about /> -->
-    <!-- <app-contact /> -->
-    <!-- <app-footer /> -->
+    <app-about />
+    <app-contact />
+    <app-footer />
   </section>
 </template>
 <script>
