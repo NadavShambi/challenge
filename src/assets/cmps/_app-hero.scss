@@ -1,0 +1,51 @@
+.app-hero {
+    margin-block: em(50px);
+    // padding-inline: em(36px);
+    text-align: center;
+    img {
+        padding: 8px;
+        max-width: em(720px);
+        margin-inline: auto;
+    }
+    .hero-info {
+        background-image: url("../images/bg-curvy-mobile.svg");
+        h1 {
+            margin-block-start: em(33px);
+            font-family: ralewayBold;
+            font-size: em(24px);
+            line-height: em(24px);
+            max-width: em(320px);
+            margin-inline: auto;
+            padding-inline: em(20px);
+        }
+        p {
+            font-size: em(14px);
+            line-height: em(21px);
+            width: em(296px);
+            margin-inline: auto;
+            font-family: openSans;
+            margin-block-start: em(20px);
+        }
+        button {
+            margin-block-start: em(33px);
+            padding: 16px 81px;
+            border-radius: 2em;
+            border: none;
+            background: $gradient;
+            box-shadow: 2px 3px 6px #00000029;
+            color: $light;
+        }
+
+        @media (min-width: $break-normal) {
+            h1 {
+                font-size: em(40px);
+            }
+            p {
+                font-size: em(20px);
+                width: em(590px);
+                padding-inline: em(60px);
+                line-height: em(30px);
+            }
+        }
+    }
+}

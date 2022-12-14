@@ -1,0 +1,36 @@
+.app-header {
+    @include flex(row, center, space-between);
+    margin-block-start: em(25px);
+    @media (min-width: $break-normal) {
+        margin-block-start: em(78px);
+    }
+    .logo {
+        width: em(80px);
+        transition: width .3s;
+        @media (min-width: $break-normal) {
+            width: em(176px);
+        }
+    }
+    nav ul {
+        font-family: raleway;
+        transition: all .3s;
+
+        @include flex;
+        font-size: 12px;
+        & > *:not(:last-child) {
+            margin-inline-end: em(25px);
+            @media (min-width: $break-normal) {
+                margin-inline-end: em(58px);
+            }
+        }
+        & > *:last-child {
+            margin-inline-end: em(5px);
+            @media (min-width: $break-normal) {
+                margin-inline-end: 0;
+            }
+        }
+        @media (min-width: $break-normal) {
+            font-size: rem(16px);
+        }
+    }
+}

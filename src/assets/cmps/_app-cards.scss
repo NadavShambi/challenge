@@ -1,0 +1,34 @@
+.cards-container {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
+    grid-auto-rows: 320px;
+    width: 100%;
+    @media (min-width:800px) {
+        grid-template-columns: repeat(2, minmax(320px, 1fr));
+    }
+    .card{
+        @include flex(column, center, center);
+        img {
+            width: em(64px);
+            @media (min-width:800px) {
+                width: 76px;
+            }
+        }
+        h4{
+            font-size: em(18px);
+            margin-block-start: 20px;
+            font-family: ralewayBold;
+            @media (min-width:800px) {
+                font-size: em(20px);
+            }
+        }
+        p{
+            margin-block-start: em(8px);
+            font-size: em(14px);
+            line-height: em(32px);
+            width: em(360px);
+            text-align: center;
+        }
+    }
+}
